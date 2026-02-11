@@ -1,0 +1,1251 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sachin Pokharel - AI/ML Engineer</title>
+
+  <!--
+    - favicon
+  -->
+  <link rel="shortcut icon" href="./assets/images/logo.ico" type="image/x-icon">
+
+  <!--
+    - custom css link with cache busting
+  -->
+  <script>
+    // Automatic cache busting for CSS - runs before CSS is loaded
+    (function() {
+      const timestamp = new Date().getTime();
+      const link = document.createElement('link');
+      link.rel = 'stylesheet';
+      link.href = './assets/css/style.css?v=' + timestamp;
+      link.id = 'main-stylesheet';
+      document.head.appendChild(link);
+    })();
+  </script>
+
+  <!--
+    - google font link
+  -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+  <!--
+    - #MAIN
+  -->
+
+  <main>
+
+    <!--
+      - #SIDEBAR
+    -->
+
+    <aside class="sidebar" data-sidebar>
+
+      <div class="sidebar-info">
+
+        <figure class="avatar-box">
+          <img src="https://pub-4a392ab4eef54489badf5c40aa11fe18.r2.dev/images/profile.png" alt="Sachin Pokharel" width="80">
+        </figure>
+
+        <div class="info-content">
+          <h1 class="name" title="Sachin Pokharel">Sachin Pokharel</h1>
+
+          <p class="title">AI/ML Engineer</p>
+        </div>
+
+        <button class="info_more-btn" data-sidebar-btn>
+          <span>Show Contacts</span>
+
+          <ion-icon name="chevron-down"></ion-icon>
+        </button>
+
+      </div>
+
+      <div class="sidebar-info_more">
+
+        <div class="separator"></div>
+
+        <ul class="contacts-list">
+
+          <li class="contact-item">
+
+            <div class="icon-box">
+              <ion-icon name="mail-outline"></ion-icon>
+            </div>
+
+            <div class="contact-info">
+              <p class="contact-title">Email</p>
+
+              <a href="mailto:sachinwork33@gmail.com" class="contact-link">sachinwork33@gmail.com</a>
+            </div>
+
+          </li>
+
+          <li class="contact-item">
+
+            <div class="icon-box">
+              <ion-icon name="phone-portrait-outline"></ion-icon>
+            </div>
+
+            <div class="contact-info">
+              <p class="contact-title">Phone</p>
+
+              <a href="tel:+9779761727066" class="contact-link">+977 9761727066</a>
+            </div>
+
+          </li>
+
+
+          <li class="contact-item">
+
+            <div class="icon-box">
+              <ion-icon name="location-outline"></ion-icon>
+            </div>
+
+            <div class="contact-info">
+              <p class="contact-title">Location</p>
+
+              <address>Kathmandu, Nepal</address>
+            </div>
+
+          </li>
+
+        </ul>
+
+        <div class="separator"></div>
+
+        <ul class="social-list">
+
+          <li class="social-item">
+            <a href="https://www.linkedin.com/in/sachin-pokharel-493716197" class="social-link" target="_blank">
+              <ion-icon name="logo-linkedin"></ion-icon>
+            </a>
+          </li>
+
+          <li class="social-item">
+            <a href="https://github.com/Sachin-Pokharel" class="social-link" target="_blank">
+              <ion-icon name="logo-github"></ion-icon>
+            </a>
+          </li>
+
+        </ul>
+
+      </div>
+
+    </aside>
+
+
+
+
+
+    <!--
+      - #main-content
+    -->
+
+    <div class="main-content">
+
+      <!--
+        - #NAVBAR
+      -->
+
+      <nav class="navbar">
+
+        <ul class="navbar-list">
+
+          <li class="navbar-item">
+            <button class="navbar-link  active" data-nav-link>About</button>
+          </li>
+
+          <li class="navbar-item">
+            <button class="navbar-link" data-nav-link>Resume</button>
+          </li>
+
+          <li class="navbar-item">
+            <button class="navbar-link" data-nav-link>Portfolio</button>
+          </li>
+
+          <li class="navbar-item">
+            <button class="navbar-link" data-nav-link>Blog</button>
+          </li>
+
+          <li class="navbar-item">
+            <button class="navbar-link" data-nav-link>Contact</button>
+          </li>
+
+        </ul>
+
+      </nav>
+
+
+
+
+
+      <!--
+        - #ABOUT
+      -->
+
+      <article class="about  active" data-page="about">
+
+        <header>
+          <h2 class="h2 article-title">About me</h2>
+        </header>
+
+        <section class="about-text">
+          <p>
+            AI/ML Engineer with 2+ years of experience specializing in Computer Vision, delivering production systems for object detection, document analysis, biometric verification, and image processing. Expert in detection models, OCR engines, liveness detection, and vision pipelines deployed via FastAPI and containerized microservices.
+          </p>
+
+          <p>
+            Also experienced in Generative AI (RAG-based LLM agents) and NLP, with a track record of deploying vision solutions across fintech, health, and green energy. Strong in end-to-end ML lifecycle—from research and model development to production deployment and monitoring—with a focus on scalable, production-ready architectures.
+          </p>
+        </section>
+
+
+        <!--
+          - service
+        -->
+
+        <section class="service">
+
+          <h3 class="h3 service-title">What i'm doing</h3>
+
+          <ul class="service-list">
+
+            <li class="service-item">
+
+              <div class="service-icon-box">
+                <img src="./assets/images/icon-design.svg" alt="Computer Vision icon" width="40">
+              </div>
+
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">Computer Vision</h4>
+
+                <p class="service-item-text">
+                  Building production-ready CV systems for object detection, OCR, biometric verification, and image processing.
+                </p>
+              </div>
+
+            </li>
+
+            <li class="service-item">
+
+              <div class="service-icon-box">
+                <img src="./assets/images/icon-dev.svg" alt="ML Engineering icon" width="40">
+              </div>
+
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">ML Engineering</h4>
+
+                <p class="service-item-text">
+                  End-to-end ML lifecycle from research to production deployment with scalable architectures.
+                </p>
+              </div>
+
+            </li>
+
+            <li class="service-item">
+
+              <div class="service-icon-box">
+                <img src="./assets/images/icon-app.svg" alt="Generative AI icon" width="40">
+              </div>
+
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">Generative AI</h4>
+
+                <p class="service-item-text">
+                  Developing RAG-based LLM agents, multi-agent orchestration, and document QA systems.
+                </p>
+              </div>
+
+            </li>
+
+            <li class="service-item">
+
+              <div class="service-icon-box">
+                <img src="./assets/images/icon-photo.svg" alt="API Development icon" width="40">
+              </div>
+
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">API Development</h4>
+
+                <p class="service-item-text">
+                  Building scalable FastAPI services and microservices for high-volume ML inference.
+                </p>
+              </div>
+
+            </li>
+
+          </ul>
+
+        </section>
+
+
+        <!--
+          - skills
+        -->
+
+        <section class="clients">
+
+          <h3 class="h3 clients-title">Skills & Frameworks</h3>
+
+          <ul class="clients-list has-scrollbar">
+
+            <li class="clients-item">
+              <a href="https://www.python.org/" target="_blank">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" alt="Python" style="width: 60px; height: 60px;">
+                <span class="clients-item-name">Python</span>
+              </a>
+            </li>
+
+            <li class="clients-item">
+              <a href="https://pytorch.org/" target="_blank">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/pytorch/pytorch-original.svg" alt="PyTorch" style="width: 60px; height: 60px;">
+                <span class="clients-item-name">PyTorch</span>
+              </a>
+            </li>
+
+            <li class="clients-item">
+              <a href="https://www.tensorflow.org/" target="_blank">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tensorflow/tensorflow-original.svg" alt="TensorFlow" style="width: 60px; height: 60px;">
+                <span class="clients-item-name">TensorFlow</span>
+              </a>
+            </li>
+
+            <li class="clients-item">
+              <a href="https://opencv.org/" target="_blank">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/opencv/opencv-original.svg" alt="OpenCV" style="width: 60px; height: 60px;">
+                <span class="clients-item-name">OpenCV</span>
+              </a>
+            </li>
+
+            <li class="clients-item">
+              <a href="https://fastapi.tiangolo.com/" target="_blank">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/fastapi/fastapi-original.svg" alt="FastAPI" style="width: 60px; height: 60px;">
+                <span class="clients-item-name">FastAPI</span>
+              </a>
+            </li>
+
+            <li class="clients-item">
+              <a href="https://www.docker.com/" target="_blank">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-original.svg" alt="Docker" style="width: 60px; height: 60px;">
+                <span class="clients-item-name">Docker</span>
+              </a>
+            </li>
+
+            <li class="clients-item">
+              <a href="https://aws.amazon.com/" target="_blank">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/9/93/Amazon_Web_Services_Logo.svg" alt="AWS" style="width: 60px; height: 60px;">
+                <span class="clients-item-name">AWS</span>
+              </a>
+            </li>
+
+            <li class="clients-item">
+              <a href="https://www.mongodb.com/" target="_blank">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg" alt="MongoDB" style="width: 60px; height: 60px;">
+                <span class="clients-item-name">MongoDB</span>
+              </a>
+            </li>
+
+            <li class="clients-item">
+              <a href="https://www.postgresql.org/" target="_blank">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-original.svg" alt="PostgreSQL" style="width: 60px; height: 60px;">
+                <span class="clients-item-name">PostgreSQL</span>
+              </a>
+            </li>
+
+            <li class="clients-item">
+              <a href="https://huggingface.co/" target="_blank">
+                <img src="https://huggingface.co/front/assets/huggingface_logo-noborder.svg" alt="HuggingFace" style="width: 60px; height: 60px;">
+                <span class="clients-item-name">HuggingFace</span>
+              </a>
+            </li>
+
+            <li class="clients-item">
+              <a href="https://www.langchain.com/" target="_blank">
+                <img src="https://avatars.githubusercontent.com/u/126733545?s=200&v=4" alt="LangChain" style="width: 60px; height: 60px;">
+                <span class="clients-item-name">LangChain</span>
+              </a>
+            </li>
+
+            <li class="clients-item">
+              <a href="https://github.com/" target="_blank">
+                <img src="https://cdn.iconscout.com/icon/free/png-512/free-github-logo-icon-svg-download-png-8630395.png?f=webp&w=256" alt="GitHub" style="width: 60px; height: 60px;">
+                <span class="clients-item-name">GitHub</span>
+              </a>
+            </li>
+
+            <li class="clients-item">
+              <a href="https://www.llamaindex.ai/" target="_blank">
+                <img src="https://raw.githubusercontent.com/lobehub/lobe-icons/refs/heads/master/packages/static-png/dark/llamaindex-color.png" alt="LlamaIndex" onerror="this.src='https://avatars.githubusercontent.com/u/126733545?s=200&v=4'" style="width: 60px; height: 60px; object-fit: contain;">
+                <span class="clients-item-name">LlamaIndex</span>
+              </a>
+            </li>
+
+            <li class="clients-item">
+              <a href="https://ultralytics.com/" target="_blank">
+                <img src="https://ultralytics.gallerycdn.vsassets.io/extensions/ultralytics/ultralytics-snippets/0.1.11/1735826925939/Microsoft.VisualStudio.Services.Icons.Default" alt="Ultralytics" onerror="this.src='https://avatars.githubusercontent.com/u/26833433?s=200&v=4'" style="width: 60px; height: 60px;">
+                <span class="clients-item-name">Ultralytics</span>
+              </a>
+            </li>
+
+            <li class="clients-item">
+              <a href="https://langchain-ai.github.io/langgraph/" target="_blank">
+                <img src="https://avatars.githubusercontent.com/u/126733545?s=200&v=4" alt="LangGraph" style="width: 60px; height: 60px;">
+                <span class="clients-item-name">LangGraph</span>
+              </a>
+            </li>
+
+            <li class="clients-item">
+              <a href="https://neo4j.com/" target="_blank">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/neo4j/neo4j-original.svg" alt="Neo4j" style="width: 60px; height: 60px;">
+                <span class="clients-item-name">Neo4j</span>
+              </a>
+            </li>
+
+            <li class="clients-item">
+              <a href="https://n8n.io/" target="_blank">
+                <img src="https://avatars.githubusercontent.com/u/45487711?s=200&v=4" alt="n8n" style="width: 60px; height: 60px;">
+                <span class="clients-item-name">n8n</span>
+              </a>
+            </li>
+
+          </ul>
+
+        </section>
+
+      </article>
+
+
+
+
+
+      <!--
+        - #RESUME
+      -->
+
+      <article class="resume" data-page="resume">
+
+        <header>
+          <h2 class="h2 article-title">Resume</h2>
+        </header>
+
+        <section class="timeline">
+
+          <div class="title-wrapper">
+            <div class="icon-box">
+              <ion-icon name="briefcase-outline"></ion-icon>
+            </div>
+
+            <h3 class="h3">Work Experience</h3>
+          </div>
+
+          <ol class="timeline-list">
+
+            <li class="timeline-item resume-card">
+
+              <div class="resume-card-header">
+                <div class="company-logo-wrapper">
+                  <img src="https://media.licdn.com/dms/image/v2/D560BAQFH8R3mdJAocA/company-logo_200_200/B56Zur7o6OHMAI-/0/1768116097977/thirdfactor_ai_logo?e=1770854400&v=beta&t=PRLITTNeGi-aws5ypgNbBSZPDEetiPWP8e488q7mLkc" alt="ThirdFactor AI" class="company-logo" onerror="this.style.display='none'">
+                </div>
+                <div class="resume-card-title-wrapper">
+                  <div class="timeline-item-header">
+                    <h4 class="h4 timeline-item-title">Senior ML Engineer</h4>
+                    <span class="timeline-item-date">Nov 2025 — Present</span>
+                  </div>
+                  <em class="company-name">ThirdFactor AI, Lalitpur, Nepal</em>
+                </div>
+              </div>
+
+              <div class="resume-card-content">
+                <p class="timeline-text">
+                  • Built production OCR engine for Nepali government IDs with >93% accuracy, reducing processing time by 80%
+                  <br>• Developing passive liveness detection system meeting ISO iBeta standards (Level 1 & 2)
+                  <br>• Researching age estimation models and deepfake detection for biometric verification
+                </p>
+              </div>
+
+            </li>
+
+            <li class="timeline-item resume-card">
+
+              <div class="resume-card-header">
+                <div class="company-logo-wrapper">
+                  <img src="https://media.licdn.com/dms/image/v2/C560BAQESwaosWD4uXg/company-logo_200_200/company-logo_200_200/0/1668536964594?e=1770854400&v=beta&t=dJFZ-Ww4t9YqR01G4swwUfbv4awA6SCUYZuUy-Pd-mM" alt="Aerawat Corp" class="company-logo" onerror="this.style.display='none'">
+                </div>
+                <div class="resume-card-title-wrapper">
+                  <div class="timeline-item-header">
+                    <h4 class="h4 timeline-item-title">AI/ML Engineer</h4>
+                    <span class="timeline-item-date">Jan 2024 — June 2025</span>
+                  </div>
+                  <em class="company-name">Aerawat Corp, Lalitpur, Nepal</em>
+                </div>
+              </div>
+
+              <div class="resume-card-content">
+                <p class="timeline-text">
+                  • Integrated face/document detection and gesture recognition for KYC onboarding, reducing time by 60%
+                  <br>• Ensured regulatory compliance with encryption and data privacy protocols
+                  <br>• Researched AI applications for personalized ABA therapy plans in healthcare
+                </p>
+              </div>
+
+            </li>
+
+            <li class="timeline-item resume-card">
+
+              <div class="resume-card-header">
+                <div class="company-logo-wrapper">
+                  <img src="https://media.licdn.com/dms/image/v2/D4D0BAQGnjLSWYaIVvw/company-logo_200_200/B4DZgV7S6TH8AI-/0/1752714523776/khalti_digital_wallet_logo?e=1770854400&v=beta&t=-SI4rMxx7ov58WJ1vXgrRJCnkt6WWcAm9Vq8takhI04" alt="Khalti" class="company-logo" onerror="this.style.display='none'">
+                </div>
+                <div class="resume-card-title-wrapper">
+                  <div class="timeline-item-header">
+                    <h4 class="h4 timeline-item-title">Data/ML Engineer</h4>
+                    <span class="timeline-item-date">Mar 2023 — Jan 2024</span>
+                  </div>
+                  <em class="company-name">Khalti Pvt. Ltd, Lalitpur, Nepal</em>
+                </div>
+              </div>
+
+              <div class="resume-card-content">
+                <p class="timeline-text">
+                  • Built semantic search engine using NLP, improving relevance by 40% for 1M+ users
+                  <br>• Developed probabilistic record linkage model with 99.5% accuracy for duplicate detection
+                  <br>• Integrated Neo4j graph database for personalized recommendations, increasing retention by 25%
+                </p>
+              </div>
+
+            </li>
+
+          </ol>
+
+        </section>
+
+        <section class="timeline">
+
+          <div class="title-wrapper">
+            <div class="icon-box">
+              <ion-icon name="briefcase-outline"></ion-icon>
+            </div>
+
+            <h3 class="h3">Freelance & Consulting</h3>
+          </div>
+
+          <ol class="timeline-list">
+
+            <li class="timeline-item resume-card">
+
+              <div class="resume-card-header">
+                <div class="company-logo-wrapper">
+                  <img src="https://media.licdn.com/dms/image/v2/C560BAQE8KxMoQ9gZUw/company-logo_200_200/company-logo_200_200/0/1669622370640?e=1770854400&v=beta&t=p8T5BT8Zk-U_7kL6tapMLmZOzuhc72PHHn7Q-vAK_SQ" alt="Logictive Solutions" class="company-logo" onerror="this.style.display='none'">
+                </div>
+                <div class="resume-card-title-wrapper">
+                  <div class="timeline-item-header">
+                    <h4 class="h4 timeline-item-title">AI/ML Engineer (Contract)</h4>
+                    <span class="timeline-item-date">Apr 2025 — June 2025</span>
+                  </div>
+                  <em class="company-name">Logictive Solutions, Kathmandu, Nepal</em>
+                </div>
+              </div>
+
+              <div class="resume-card-content">
+                <p class="timeline-text">
+                  • Built computer vision pipeline for solar panel detection using satellite imagery
+                  <br>• Fine-tuned YOLOv11 model achieving 96% accuracy, processing 1000+ images/hour on AWS
+                </p>
+              </div>
+
+            </li>
+
+            <li class="timeline-item resume-card">
+
+              <div class="resume-card-header">
+                <div class="company-logo-wrapper">
+                  <img src="https://media.licdn.com/dms/image/v2/D560BAQGdh95MSDa9YA/company-logo_200_200/company-logo_200_200/0/1700391762143/yirifi_logo?e=1770854400&v=beta&t=YLhEqBplYocJrbMUzrYosO7vXFu5YfF3Jc3CZ6CWwu8" alt="Yirifi.ai" class="company-logo" onerror="this.style.display='none'">
+                </div>
+                <div class="resume-card-title-wrapper">
+                  <div class="timeline-item-header">
+                    <h4 class="h4 timeline-item-title">Backend Developer (Part-Time)</h4>
+                    <span class="timeline-item-date">June 2024 — Feb 2025</span>
+                  </div>
+                  <em class="company-name">Yirifi.ai, Singapore</em>
+                </div>
+              </div>
+
+              <div class="resume-card-content">
+                <p class="timeline-text">
+                  • Developed Hybrid RAG-based LLM agents for regulatory compliance in crypto/blockchain
+                  <br>• Integrated MongoDB for chat history, improving engagement by 50%
+                  <br>• Built scalable FastAPI services handling 5K+ daily requests
+                </p>
+              </div>
+
+            </li>
+
+            <li class="timeline-item resume-card">
+
+              <div class="resume-card-header">
+                <div class="company-logo-wrapper">
+                  <img src="https://media.licdn.com/dms/image/v2/D560BAQFA4O_g2zrPEA/company-logo_200_200/company-logo_200_200/0/1715932295265?e=1770854400&v=beta&t=U9gy4mJTYEavxZhA5vLgRMJq2sRy_GT8qb4iUqivPG8" alt="Swivt Technologies" class="company-logo" onerror="this.style.display='none'">
+                </div>
+                <div class="resume-card-title-wrapper">
+                  <div class="timeline-item-header">
+                    <h4 class="h4 timeline-item-title">ML Engineer (Contract)</h4>
+                    <span class="timeline-item-date">May 2024 — July 2024</span>
+                  </div>
+                  <em class="company-name">Swivt Technologies, Lalitpur, Nepal</em>
+                </div>
+              </div>
+
+              <div class="resume-card-content">
+                <p class="timeline-text">
+                  • Built RAG chatbot for insurance companies, reducing response time by 70%
+                  <br>• Integrated document chat capabilities, improving satisfaction scores by 85%
+                  <br>• Mentored 15+ students in Data Science and AI capstone projects
+                </p>
+              </div>
+
+            </li>
+
+          </ol>
+
+        </section>
+
+        <section class="timeline">
+
+          <div class="title-wrapper">
+            <div class="icon-box">
+              <ion-icon name="people-outline"></ion-icon>
+            </div>
+
+            <h3 class="h3">Professional Engagement</h3>
+          </div>
+
+          <ol class="timeline-list">
+
+            <li class="timeline-item resume-card">
+
+              <div class="resume-card-header">
+                <div class="company-logo-wrapper">
+                  <img src="https://media.licdn.com/dms/image/v2/D4D0BAQF38XIdWjS1kg/company-logo_200_200/company-logo_200_200/0/1687692787682?e=1770854400&v=beta&t=lwh_D9YQpXEn0fAcEC07P770fblEbGTk4H9yk-9j0Uc" alt="IOE" class="company-logo" onerror="this.style.display='none'">
+                </div>
+                <div class="resume-card-title-wrapper">
+                  <div class="timeline-item-header">
+                    <h4 class="h4 timeline-item-title">Mentor – IOE Final Year Students Project</h4>
+                        <span class="timeline-item-date">2025</span>
+                      </div>
+                  <em class="company-name">Institute of Engineering, Pulchowk, Nepal</em>
+                </div>
+              </div>
+
+              <div class="resume-card-content">
+                <p class="timeline-text">
+                  Mentored students on Human Action Recognition (HAR) project, providing guidance on computer vision techniques and deep learning model development.
+                </p>
+              </div>
+
+            </li>
+
+            <li class="timeline-item resume-card">
+
+              <div class="resume-card-header">
+                <div class="company-logo-wrapper">
+                  <img src="https://media.licdn.com/dms/image/v2/C4D0BAQGtFBYqQDmcfg/company-logo_200_200/company-logo_200_200/0/1656831689349/kings_college_nepal_logo?e=1770854400&v=beta&t=3WbECh1xm0R1uCS59iqdHjP5fWISHHEkH49NFAywnas" alt="Kings College" class="company-logo" onerror="this.style.display='none'">
+                </div>
+                <div class="resume-card-title-wrapper">
+                  <div class="timeline-item-header">
+                    <h4 class="h4 timeline-item-title">Judge Panelist – AI in Education Hackathon</h4>
+                    <span class="timeline-item-date">2023</span>
+                  </div>
+                  <em class="company-name">Kings College Hackademia Event, Nepal</em>
+                </div>
+              </div>
+
+              <div class="resume-card-content">
+                <p class="timeline-text">
+                  Evaluated 20+ AI solutions in education technology, assessing technical merit, scalability, and real-world impact.
+                </p>
+              </div>
+
+            </li>
+
+          </ol>
+
+        </section>
+
+        <section class="timeline">
+
+          <div class="title-wrapper">
+            <div class="icon-box">
+              <ion-icon name="book-outline"></ion-icon>
+            </div>
+
+            <h3 class="h3">Education</h3>
+          </div>
+
+          <ol class="timeline-list">
+
+            <li class="timeline-item resume-card">
+
+              <div class="resume-card-header">
+                <div class="company-logo-wrapper">
+                  <img src="https://media.licdn.com/dms/image/v2/D4E0BAQFswjZEr9IPIg/company-logo_200_200/company-logo_200_200/0/1687424875270/blekinge_institute_of_technology_logo?e=1770854400&v=beta&t=gNGSJ8V1xdebtH_irhxn9bKwNlBxihiweojwP_fbMvk" alt="Blekinge Institute" class="company-logo" onerror="this.style.display='none'">
+                </div>
+                <div class="resume-card-title-wrapper">
+                  <div class="timeline-item-header">
+                    <h4 class="h4 timeline-item-title">MSc In Computer Science</h4>
+                    <span class="timeline-item-date">Sep 2019 — Nov 2021</span>
+                  </div>
+                  <em class="company-name">Blekinge Institute of Technology, Karlskrona, Sweden</em>
+                </div>
+              </div>
+
+              <div class="resume-card-content">
+                <p class="timeline-text">
+                  <strong>Dissertation:</strong> ARMAS: Active Reconstruction of Missing Audio Segments
+                  <br>
+                  <a href="http://www.diva-portal.org/smash/get/diva2:1608536/FULLTEXT02.pdf" target="_blank" style="color: var(--vegas-gold);">Thesis Report</a>
+                </p>
+              </div>
+
+            </li>
+
+            <li class="timeline-item resume-card">
+
+              <div class="resume-card-header">
+                <div class="company-logo-wrapper">
+                  <img src="https://media.licdn.com/dms/image/v2/C510BAQFVFXxLqxgX3g/company-logo_200_200/company-logo_200_200/0/1631305211714?e=1770854400&v=beta&t=GxROFTzcB5nA-SfL4bWsQ8txq1b-TtgzROToT068Wio" alt="IIIT Allahabad" class="company-logo" onerror="this.style.display='none'">
+                </div>
+                <div class="resume-card-title-wrapper">
+                  <div class="timeline-item-header">
+                    <h4 class="h4 timeline-item-title">B.Tech in Information Technology</h4>
+                    <span class="timeline-item-date">Jul 2013 — Jul 2017</span>
+                  </div>
+                  <em class="company-name">Indian Institute of Information Technology, Allahabad, India</em>
+                </div>
+              </div>
+
+            </li>
+
+          </ol>
+
+        </section>
+
+        <div style="display: flex; justify-content: flex-end; margin-top: 30px;">
+          <a href="https://pub-4a392ab4eef54489badf5c40aa11fe18.r2.dev/resume/CV_SachinPokharel.pdf" download class="download-resume-btn">
+            <ion-icon name="download-outline"></ion-icon>
+            <span>Download Resume</span>
+          </a>
+        </div>
+
+      </article>
+
+
+
+
+
+      <!--
+        - #PORTFOLIO
+      -->
+
+      <article class="portfolio" data-page="portfolio">
+
+        <header>
+          <h2 class="h2 article-title">Portfolio</h2>
+        </header>
+
+        <section class="projects">
+
+          <ul class="filter-list">
+
+            <li class="filter-item">
+              <button class="active" data-filter-btn>All</button>
+            </li>
+
+            <li class="filter-item">
+              <button data-filter-btn>Computer Vision</button>
+            </li>
+
+            <li class="filter-item">
+              <button data-filter-btn>Generative AI</button>
+            </li>
+
+            <li class="filter-item">
+              <button data-filter-btn>NLP</button>
+            </li>
+
+          </ul>
+
+          <div class="filter-select-box">
+
+            <button class="filter-select" data-select>
+
+              <div class="select-value" data-selecct-value>Select category</div>
+
+              <div class="select-icon">
+                <ion-icon name="chevron-down"></ion-icon>
+              </div>
+
+            </button>
+
+            <ul class="select-list">
+
+              <li class="select-item">
+                <button data-select-item>All</button>
+              </li>
+
+              <li class="select-item">
+                <button data-select-item>Computer Vision</button>
+              </li>
+
+              <li class="select-item">
+                <button data-select-item>Generative AI</button>
+              </li>
+
+              <li class="select-item">
+                <button data-select-item>NLP</button>
+              </li>
+
+            </ul>
+
+          </div>
+
+          <ul class="project-list">
+
+            <li class="project-item  active" data-filter-item data-category="computer vision">
+              <a href="#">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="https://images.unsplash.com/photo-1586281380349-632531db7ed4?w=800&q=80" alt="OCR Engine" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">Nepali ID OCR Engine</h3>
+
+                <p class="project-category">Computer Vision</p>
+
+              </a>
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="computer vision">
+              <a href="#">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="https://images.unsplash.com/photo-1611162617474-5b21e879e113?w=800&q=80" alt="Liveness Detection" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">Passive Liveness Detection</h3>
+
+                <p class="project-category">Computer Vision</p>
+
+              </a>
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="computer vision">
+              <a href="#">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="https://images.unsplash.com/photo-1502920917128-1aa500764cbd?w=800&q=80" alt="Solar Panel Detection" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">Solar Panel Detection</h3>
+
+                <p class="project-category">Computer Vision</p>
+
+              </a>
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="computer vision">
+              <a href="#">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="https://images.unsplash.com/photo-1563013544-824ae1b704d3?w=800&q=80" alt="KYC Onboarding" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">KYC Onboarding System</h3>
+
+                <p class="project-category">Computer Vision</p>
+
+              </a>
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="generative ai">
+              <a href="#">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=800&q=80" alt="RAG Chatbot" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">RAG Insurance Chatbot</h3>
+
+                <p class="project-category">Generative AI</p>
+
+              </a>
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="generative ai">
+              <a href="#">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=800&q=80" alt="Regulatory LLM Agent" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">Regulatory LLM Agent</h3>
+
+                <p class="project-category">Generative AI</p>
+
+              </a>
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="nlp">
+              <a href="#">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=800&q=80" alt="Semantic Search" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">Semantic Search Engine</h3>
+
+                <p class="project-category">NLP</p>
+
+              </a>
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="nlp">
+              <a href="#">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="https://images.unsplash.com/photo-1558494949-ef010cbdcc31?w=800&q=80" alt="Record Linkage" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">Probabilistic Record Linkage</h3>
+
+                <p class="project-category">NLP</p>
+
+              </a>
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="computer vision">
+              <a href="#">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="https://images.unsplash.com/photo-1559757148-5c350d0d3c56?w=800&q=80" alt="Age Estimation" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">Human Age Estimation</h3>
+
+                <p class="project-category">Computer Vision</p>
+
+              </a>
+            </li>
+
+          </ul>
+
+        </section>
+
+      </article>
+
+
+
+
+
+      <!--
+        - #BLOG
+      -->
+
+      <article class="blog" data-page="blog">
+
+        <header>
+          <h2 class="h2 article-title">Blog</h2>
+        </header>
+
+        <section class="blog-posts">
+
+          <ul class="blog-posts-list">
+
+            <li class="blog-post-item">
+              <a href="#">
+
+                <figure class="blog-banner-box">
+                  <img src="./assets/images/blog-1.jpg" alt="Building Production OCR Systems" loading="lazy">
+                </figure>
+
+                <div class="blog-content">
+
+                  <div class="blog-meta">
+                    <p class="blog-category">Computer Vision</p>
+
+                    <span class="dot"></span>
+
+                    <time datetime="2025-01-15">Jan 15, 2025</time>
+                  </div>
+
+                  <h3 class="h3 blog-item-title">Building Production OCR Systems for Multilingual Documents</h3>
+
+                  <p class="blog-text">
+                    Exploring the challenges and solutions in developing OCR engines that achieve >93% accuracy across multiple languages and document types.
+                  </p>
+
+                </div>
+
+              </a>
+            </li>
+
+            <li class="blog-post-item">
+              <a href="#">
+
+                <figure class="blog-banner-box">
+                  <img src="./assets/images/blog-2.jpg" alt="Liveness Detection Techniques" loading="lazy">
+                </figure>
+
+                <div class="blog-content">
+
+                  <div class="blog-meta">
+                    <p class="blog-category">Computer Vision</p>
+
+                    <span class="dot"></span>
+
+                    <time datetime="2025-01-10">Jan 10, 2025</time>
+                  </div>
+
+                  <h3 class="h3 blog-item-title">Passive Liveness Detection: Meeting iBeta Standards</h3>
+
+                  <p class="blog-text">
+                    Deep dive into implementing state-of-the-art anti-spoofing techniques for biometric verification systems.
+                  </p>
+
+                </div>
+
+              </a>
+            </li>
+
+            <li class="blog-post-item">
+              <a href="#">
+
+                <figure class="blog-banner-box">
+                  <img src="./assets/images/blog-3.jpg" alt="RAG Systems Architecture" loading="lazy">
+                </figure>
+
+                <div class="blog-content">
+
+                  <div class="blog-meta">
+                    <p class="blog-category">Generative AI</p>
+
+                    <span class="dot"></span>
+
+                    <time datetime="2024-12-20">Dec 20, 2024</time>
+                  </div>
+
+                  <h3 class="h3 blog-item-title">Architecting Hybrid RAG Systems for Regulatory Compliance</h3>
+
+                  <p class="blog-text">
+                    Building scalable RAG-based LLM agents that serve specialized domains like crypto and blockchain regulatory management.
+                  </p>
+
+                </div>
+
+              </a>
+            </li>
+
+            <li class="blog-post-item">
+              <a href="#">
+
+                <figure class="blog-banner-box">
+                  <img src="./assets/images/blog-4.jpg" alt="YOLO Object Detection" loading="lazy">
+                </figure>
+
+                <div class="blog-content">
+
+                  <div class="blog-meta">
+                    <p class="blog-category">Computer Vision</p>
+
+                    <span class="dot"></span>
+
+                    <time datetime="2024-11-25">Nov 25, 2024</time>
+                  </div>
+
+                  <h3 class="h3 blog-item-title">Fine-tuning YOLOv11 for Satellite Imagery Analysis</h3>
+
+                  <p class="blog-text">
+                    Lessons learned from deploying real-time object detection models for solar panel identification using high-resolution satellite imagery.
+                  </p>
+
+                </div>
+
+              </a>
+            </li>
+
+            <li class="blog-post-item">
+              <a href="#">
+
+                <figure class="blog-banner-box">
+                  <img src="./assets/images/blog-5.jpg" alt="MLOps Best Practices" loading="lazy">
+                </figure>
+
+                <div class="blog-content">
+
+                  <div class="blog-meta">
+                    <p class="blog-category">MLOps</p>
+
+                    <span class="dot"></span>
+
+                    <time datetime="2024-10-15">Oct 15, 2024</time>
+                  </div>
+
+                  <h3 class="h3 blog-item-title">MLOps: From Research to Production Deployment</h3>
+
+                  <p class="blog-text">
+                    Best practices for containerizing ML models, deploying scalable FastAPI services, and maintaining 99.9% uptime in production.
+                  </p>
+
+                </div>
+
+              </a>
+            </li>
+
+            <li class="blog-post-item">
+              <a href="#">
+
+                <figure class="blog-banner-box">
+                  <img src="./assets/images/blog-6.jpg" alt="Semantic Search with NLP" loading="lazy">
+                </figure>
+
+                <div class="blog-content">
+
+                  <div class="blog-meta">
+                    <p class="blog-category">NLP</p>
+
+                    <span class="dot"></span>
+
+                    <time datetime="2024-09-10">Sep 10, 2024</time>
+                  </div>
+
+                  <h3 class="h3 blog-item-title">Building Deep Learning-Based Semantic Search Engines</h3>
+
+                  <p class="blog-text">
+                    How NLP techniques can improve search relevance by 40% and enhance user experience for millions of users.
+                  </p>
+
+                </div>
+
+              </a>
+            </li>
+
+          </ul>
+
+        </section>
+
+      </article>
+
+
+
+
+
+      <!--
+        - #CONTACT
+      -->
+
+      <article class="contact" data-page="contact">
+
+        <header>
+          <h2 class="h2 article-title">Contact</h2>
+        </header>
+
+        <section class="mapbox" data-mapbox>
+          <figure>
+            <iframe
+              src="https://maps.google.com/maps?q=27.6865,85.3167&t=&z=15&ie=UTF8&iwloc=&output=embed"
+              width="400" height="300" loading="lazy" style="filter: grayscale(0) brightness(1) contrast(1.1); border: 0;" allowfullscreen></iframe>
+          </figure>
+        </section>
+
+        <section class="contact-form">
+
+          <h3 class="h3 form-title">Contact Form</h3>
+
+          <form action="#" class="form" data-form>
+
+            <div class="input-wrapper">
+              <input type="text" name="fullname" class="form-input" placeholder="Full name" required data-form-input>
+
+              <input type="email" name="email" class="form-input" placeholder="Email address" required data-form-input>
+            </div>
+
+            <textarea name="message" class="form-input" placeholder="Your Message" required data-form-input></textarea>
+
+            <button class="form-btn" type="submit" disabled data-form-btn>
+              <ion-icon name="paper-plane"></ion-icon>
+              <span>Send Message</span>
+            </button>
+
+          </form>
+
+        </section>
+
+      </article>
+
+    </div>
+
+  </main>
+
+
+
+
+
+
+  <!--
+    - custom js link
+  -->
+  <script src="./assets/js/script.js"></script>
+
+  <!--
+    - ionicon link
+  -->
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+</body>
+
+</html>
