@@ -188,3 +188,33 @@ for (let i = 0; i < navigationLinks.length; i++) {
 
   });
 }
+
+// Theme toggle (light / dark)
+const themeToggle = document.getElementById("theme-toggle");
+const htmlEl = document.documentElement;
+const THEME_KEY = "srawan-theme";
+
+function setTheme(theme) {
+  htmlEl.setAttribute("data-theme", theme);
+  try { localStorage.setItem(THEME_KEY, theme); } catch (e) {}
+}
+
+function initTheme() {
+  try {
+    const saved = localStorage.getItem(THEME_KEY);
+    if (saved === "light" || saved === "dark") {
+      htmlEl.setAttribute("data-theme", saved);
+      return;
+    }
+  } catch (e) {}
+  htmlEl.setAttribute("data-theme", "dark");
+}
+
+if (themeToggle) {
+  initTheme();
+  themeToggle.addEventListener("click", function () {
+    const current = htmlEl.getAttribute("data-theme") || "dark";
+    const next = current === "dark" ? "light" : "dark";
+    setTheme(next);
+  });
+}
